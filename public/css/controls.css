@@ -1,0 +1,36 @@
+body {
+    margin: 30px;
+}
+
+h1 {
+    text-align: center;
+}
+
+.wj-flexgrid {
+    height: 400px;
+}
+
+.wj-flexchart {
+    height: 400px;
+}
+
+.grid-layout {
+    display: grid;
+    gap: 1rem;
+    grid-auto-columns: minmax(1, fr);
+    grid-template-areas:
+        'one two';
+    padding-block: 2rem;
+    width: 100%;
+    margin-inline: auto;
+}
+
+.grid-layout:nth-child(1) {
+    grid-area: one;
+    width: 100%;
+}
+
+.grid-layout:nth-child(2) {
+    grid-area: two;
+    width: 100%;
+}
